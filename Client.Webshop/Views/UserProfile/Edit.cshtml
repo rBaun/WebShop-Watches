@@ -1,0 +1,47 @@
+﻿@model Client.Domain.User
+
+@Styles.Render("~/Content/user.css")
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<div class="updateuserbox">
+
+    <h1>Opdater oplysninger</h1>
+
+    <form name="Tilmeld" method="post" action="@Url.Action("Update", "UserProfile")">
+        <hr>
+        <div> <p style="visibility: @ViewBag.Visibility; color: red; font-size: 17px; width: 250px; height: 20px;">@(TempData["EditErrorMessage"])</p> </div>
+        <label id="icon" for="name"><i class="icon-user"></i></label>
+        <input autocomplete="off" name="firstName" pattern="[a-zA-ZæøåÆØÅ]{1,20}$" type="text" id="name" placeholder="Fornavn" value="@Model.FirstName" required oninvalid="this.setCustomValidity('Indtast et fornavn med 2-20 bogstaver')" oninput="setCustomValidity('')" />
+        <label id="icon" for="name"><i class="icon-user"></i></label>
+        <input autocomplete="off" name="lastName" pattern="^[a-zA-ZæøåÆØÅ]+( [a-zA-ZæøåÆØÅ ]+)*$" type="text" id="name" placeholder="Efternavn" value="@Model.LastName" required oninvalid="this.setCustomValidity('Indtast et efternavn')" oninput="setCustomValidity('')" />
+        <label id="icon" for="name"><i class="icon-phone"></i></label>
+        <input autocomplete="off" name="number" pattern="[0-9]{8}" type="tel" id="name" placeholder="Telefon nr." value="@Model.Phone" required oninvalid="this.setCustomValidity('Indtast et gyldigt telefonnummer')" oninput="setCustomValidity('')" />
+        <label id="icon" for="name"><i class="icon-home"></i></label>
+        <input autocomplete="off" name="street" pattern="^[a-zA-ZæøåÆØÅ]+( [a-zA-ZæøåÆØÅ0-9-., ]+)*$" type="text" id="name" placeholder="Adresse" value="@Model.Address" required oninvalid="this.setCustomValidity('Indtast en gyldig adresse')" oninput="setCustomValidity('')" />
+        <label id="icon" for="name"><i class="icon-screenshot"></i></label>
+        <input autocomplete="off" name="zip" pattern="[0-9]{4}" type="tel" id="name" placeholder="Postnr." value="@Model.ZipCode" required oninvalid="this.setCustomValidity('Indtast et dansk postnummer')" oninput="setCustomValidity('')" />
+        <label id="icon" for="name"><i class="icon-building"></i></label>
+        <input autocomplete="off" name="city" pattern="[a-zA-ZæøåÆØÅ]{1,20}$" type="text" id="name" placeholder="By" value="@Model.City" required oninvalid="this.setCustomValidity('Indtast en dansk by')" oninput="setCustomValidity('')" />
+        <label id="icon" for="name"><i class="icon-envelope "></i></label>
+        <input autocomplete="off" name="email" pattern="[a-zA-ZæøåÆØÅ0-9._%+-]+@("@")[a-zA-ZæøåÆØÅ0-9.-]+\.[a-z]{2,}$" type="email" id="name" placeholder="E-mail" value="@Model.Email" required oninvalid="this.setCustomValidity('Indtast en mailadresse')" oninput="setCustomValidity('')" />
+        <label id="icon" for="name"><i class="icon-shield"></i></label>
+        <input autocomplete="off" name="password" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-ZÆØÅ])(?=.*[a-zæøå]).*$" id="name" placeholder="Eksisterende kodeord" oninvalid="this.setCustomValidity('Indtast minimum 8 tegn med tal, store og små bogstaver.')" oninput="setCustomValidity('')" />
+        <label id="icon" for="name"><i class="icon-shield"></i></label>
+        <input autocomplete="off" name="newpassword" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-ZÆØÅ])(?=.*[a-zæøå]).*$" id="name" placeholder="Nyt kodeord" oninvalid="this.setCustomValidity('Indtast minimum 8 tegn med tal, store og små bogstaver.')" oninput="setCustomValidity('')" />
+        <label id="icon" for="name"><i class="icon-shield"></i></label>
+        <input autocomplete="off" name="repeatpassword" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-ZÆØÅ])(?=.*[a-zæøå]).*$" id="name" placeholder="Gentag kodeord" oninvalid="this.setCustomValidity('Indtast minimum 8 tegn med tal, store og små bogstaver.')" oninput="setCustomValidity('')" />
+        <input name="existingemail" type="hidden" id="name" value="@Model.Email" />
+
+        <input type="submit" value="Gem ændringer" class="savebutton" />
+    </form>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

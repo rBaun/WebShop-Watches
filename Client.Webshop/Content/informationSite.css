@@ -1,0 +1,92 @@
+﻿.boldText {
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: #f5f5f5;
+    width: 708px;
+    padding-right: 4px;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    font-family: Verdana, Arial;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.formHeader {
+    font-family: Verdana, Arial;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-right: 180px;
+    text-align: right;
+}
+
+.formArea {
+    /*background-color: #EEE;*/
+    /*border: solid 1px #555;*/
+    padding: 18px 56px 0 30px;
+}
+
+.formRow {
+    width: 640px;
+    text-align: right;
+    margin-bottom: 4px;
+}
+
+.marginRightWide2 {
+    margin-right: 300px;
+}
+
+.marginRightMedium2 {
+    margin-right: 180px;
+}
+
+.marginRightSmall2 {
+    margin-right: 60px;
+}
+
+.textboxWide2 {
+    width: 360px;
+    font-size: medium;
+    height: 18px;
+}
+
+.textboxMedium2 {
+    width: 180px;
+    font-size: medium;
+    height: 18px;
+}
+
+.textboxSmall3 {
+    width: 60px;
+    font-size: medium;
+    height: 18px;
+}
+
+.textNormal {
+    font-family: Verdana, Arial;
+    font-size: medium
+}
+
+.submitButton {
+    font-family: Verdana, Arial;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    margin-right: 40px;
+    background-color: yellow;
+    cursor: grab
+}
+
+.resetButton {
+    font-family: Verdana, Arial;
+    font-size: small;
+    margin: 20px 168px 18px 0;
+    padding: 2px 5px 2px 5px;
+    border: outset 2px #FFF;
+    background-color: red;
+}
