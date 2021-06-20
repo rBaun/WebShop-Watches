@@ -11,3 +11,10 @@ The technologies used in this project, is as follows:
 * Unit & Integration tests
 * N-Layered Architecture
 * Concurrency problems
+
+
+## How to Run the Project
+The project must be opened in Visual Studio with administrative privileges. The first project to be run is Server.Host followed by the client of your choice.
+This can be the Client.DesktopClient project or the Client.WebShop project.
+
+UPDATE: The database has been taken down, resulting in database errors.
