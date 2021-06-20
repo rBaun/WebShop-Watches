@@ -100,10 +100,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Client.Webshop\Client.Webshop.csproj">
-      <Project>{91C83E78-01F3-48AF-9AB7-CA3B9DD695A6}</Project>
-      <Name>Client.Webshop</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PaymentWebAPI\PaymentWebAPI.csproj">
       <Project>{B858E6BE-CB7F-4805-BF14-6F7060689820}</Project>
       <Name>PaymentWebAPI</Name>
