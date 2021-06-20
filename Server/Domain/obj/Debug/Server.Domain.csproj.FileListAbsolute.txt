@@ -1,0 +1,12 @@
+C:\Users\Rune\Source\Repos\Petorius\Projekt3\Domain\bin\Debug\Domain.dll
+C:\Users\Rune\Source\Repos\Petorius\Projekt3\Domain\bin\Debug\Domain.pdb
+C:\Users\Rune\Source\Repos\Petorius\Projekt3\Domain\obj\Debug\Server.Domain.csprojAssemblyReference.cache
+C:\Users\Rune\Source\Repos\Petorius\Projekt3\Domain\obj\Debug\Server.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rune\Source\Repos\Petorius\Projekt3\Domain\obj\Debug\Domain.dll
+C:\Users\Rune\Source\Repos\Petorius\Projekt3\Domain\obj\Debug\Domain.pdb
+C:\Users\runeb\Desktop\Webshop-Watches\Server\Domain\bin\Debug\Domain.dll
+C:\Users\runeb\Desktop\Webshop-Watches\Server\Domain\bin\Debug\Domain.pdb
+C:\Users\runeb\Desktop\Webshop-Watches\Server\Domain\obj\Debug\Server.Domain.csprojAssemblyReference.cache
+C:\Users\runeb\Desktop\Webshop-Watches\Server\Domain\obj\Debug\Server.Domain.csproj.CoreCompileInputs.cache
+C:\Users\runeb\Desktop\Webshop-Watches\Server\Domain\obj\Debug\Domain.dll
+C:\Users\runeb\Desktop\Webshop-Watches\Server\Domain\obj\Debug\Domain.pdb
